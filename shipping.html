@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping Quote | Equipment USA</title>
+  <meta name="description" content="Request a shipping quote from Equipment USA. Submit pickup, delivery, and equipment details through our online form." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="site-shell inner-page">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-left">
+          <span>1011 Rail Dr. Woodstock, IL 60098</span>
+          <span><a href="mailto:sales@equipmentusaco.com">sales@equipmentusaco.com</a></span>
+        </div>
+        <div class="topbar-right">
+          <span id="phoneDisplay">717-322-0990</span>
+        </div>
+      </div>
+    </header>
+
+    <header class="main-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Equipment USA home">
+          <img src="assets/equipmentusa-logo-main.png" alt="Equipment USA logo" />
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#inventory">Inventory</a>
+          <a href="index.html#sell">Sell With Us</a>
+          <a href="shipping.html" class="active">Shipping</a>
+          <a href="consignment.html">Consignment</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero-shipping">
+        <div class="container page-hero-grid">
+          <div class="page-hero-copy">
+            <p class="section-tag light">Shipping Quote Request</p>
+            <h1>Need equipment shipped?</h1>
+            <p>Tell us where it needs to go, what the machine is, and anything important about loading or delivery. We use the details you send to start mapping out the best freight option.</p>
+          </div>
+          <aside class="page-hero-card">
+            <h3>Best info to include</h3>
+            <ul>
+              <li>Pickup and delivery city/state</li>
+              <li>Equipment type, weight, and dimensions if known</li>
+              <li>Whether it runs, rolls, or needs special loading</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+      <div class="container form-page-grid">
+        <div>
+                    <p class="page-lead">Fill this out with the best information you have and the request will be captured through your Netlify form setup. After deploy, configure form notifications to send submissions to <strong>sales@equipmentusaco.com</strong>.</p>
+          <div class="info-panel">
+            <h3>What to include</h3>
+            <ul>
+              <li>Pickup city/state and delivery city/state</li>
+              <li>Equipment type or item description</li>
+              <li>Approximate dimensions or weight if known</li>
+              <li>Any loading limitations or deadline notes</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="form-card" name="shipping-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="shipping-quote" />
+          <input type="hidden" name="subject" value="New Shipping Quote Request - Equipment USA" />
+          <p class="hidden-field">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-row">
+            <label>
+              Full Name
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Company
+              <input type="text" name="company">
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone">
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Pickup Location
+              <input type="text" name="pickup_location" placeholder="City, State or full address" required>
+            </label>
+            <label>
+              Delivery Location
+              <input type="text" name="delivery_location" placeholder="City, State or full address" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Equipment Type
+              <input type="text" name="equipment_type" placeholder="Excavator, skid steer, trailer, etc." required>
+            </label>
+            <label>
+              Running / Rollable?
+              <select name="running_condition">
+                <option value="">Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Partially</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Approx. Weight
+              <input type="text" name="weight" placeholder="Example: 18,000 lbs">
+            </label>
+            <label>
+              Approx. Dimensions
+              <input type="text" name="dimensions" placeholder="Example: 18L x 8W x 9H">
+            </label>
+          </div>
+
+          <label>
+            Notes
+            <textarea name="notes" rows="6" placeholder="Loading info, timing, machine details, auction lot number, or anything else helpful."></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-full" type="submit">Send Shipping Request</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <img class="footer-logo" src="assets/equipmentusa-logo-main.png" alt="Equipment USA logo" />
+          <p>Nationwide equipment brokerage built for straightforward buyers and sellers.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="consignment.html">Consignment</a>
+          <a href="mailto:sales@equipmentusaco.com">Email</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Equipment USA All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
