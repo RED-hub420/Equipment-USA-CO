@@ -1,180 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shipping Quote | Equipment USA</title>
-  <meta name="description" content="Request a shipping quote from Equipment USA. Submit pickup, delivery, and equipment details through our online form." />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipment USA | Website Under Construction</title>
+  <meta name="description" content="Equipment USA website is under construction. Buy. Sell. Move equipment nationwide.">
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    :root{--bg:#030814;--line:rgba(255,255,255,.10);--text:#f5f7fb;--muted:#c2cad8;--gold:#d7b25d;--orange:#f59e0b;--orange2:#f97316;--card:rgba(255,255,255,.06)}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:Inter,Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#0b1b35 0%,#030814 55%,#02050d 100%);color:var(--text)}
+    body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{width:min(100%,1100px)} .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+    .topbar{display:flex;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted);background:rgba(0,0,0,.18)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:40px}
+    .logo{max-width:370px;width:100%;height:auto;display:block;filter:drop-shadow(0 10px 30px rgba(0,0,0,.4));margin-bottom:14px}
+    .eyebrow{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;background:rgba(255,255,255,.03)}
+    h1{font-size:clamp(38px,6.8vw,74px);line-height:.96;margin:0 0 18px;font-weight:800;letter-spacing:-.04em}
+    p{font-size:18px;line-height:1.6;color:var(--muted);margin:0 0 24px;max-width:58ch}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:700;border:1px solid var(--line)}
+    .btn-primary{background:linear-gradient(180deg,#f0cf7a,#cf9f39);color:#161616;border-color:#e2be65}.btn-secondary{background:rgba(255,255,255,.05);color:var(--text)}
+    .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.meta div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.meta span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:6px}.meta strong{font-size:15px;line-height:1.4}
+    .panel{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:24px;padding:24px}.panel h2{font-size:26px;margin:0 0 10px}.panel p{font-size:16px;margin-bottom:18px}
+    .list{display:grid;gap:12px}.item{padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line)}.item strong{display:block;margin-bottom:5px}
+    .barricade{position:relative;height:90px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid var(--line);overflow:hidden;margin:0 0 22px}
+    .bar{position:absolute;left:24px;right:24px;height:18px;border-radius:999px;background:repeating-linear-gradient(135deg,var(--orange) 0 18px,#fff 18px 36px,var(--orange2) 36px 54px,#fff 54px 72px);box-shadow:0 8px 24px rgba(0,0,0,.25)} .bar.one{top:22px;transform:rotate(-2deg)} .bar.two{top:48px;transform:rotate(1.5deg)}
+    .leg{position:absolute;bottom:10px;width:8px;height:34px;background:#d7b25d;border-radius:4px}.leg.l1{left:72px}.leg.l2{left:124px}.leg.l3{right:124px}.leg.l4{right:72px}
+    .foot{padding:0 40px 36px;color:#9ba7bb;font-size:13px}
+    @media (max-width:860px){.hero{grid-template-columns:1fr;padding:28px}.topbar{flex-direction:column;align-items:flex-start}.meta{grid-template-columns:1fr}.foot{padding:0 28px 28px}.logo{max-width:280px}}
+  </style>
 </head>
 <body>
-  <div class="site-shell inner-page">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <div class="topbar-left">
-          <span>1011 Rail Dr. Woodstock, IL 60098</span>
-          <span><a href="mailto:sales@equipmentusaco.com">sales@equipmentusaco.com</a></span>
-        </div>
-        <div class="topbar-right">
-          <span id="phoneDisplay">717-322-0990</span>
-        </div>
+  <main class="wrap">
+    <section class="card">
+      <div class="topbar">
+        <div>1011 Rail Dr. Woodstock, IL 60098</div>
+        <div>sales@equipmentusaco.com</div>
+        <div>717-322-0990</div>
       </div>
-    </header>
-
-    <header class="main-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Equipment USA home">
-          <img src="assets/equipmentusa-logo-main.png" alt="Equipment USA logo" />
-        </a>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="main-nav">
-          <a href="index.html">Home</a>
-          <a href="index.html#inventory">Inventory</a>
-          <a href="index.html#sell">Sell With Us</a>
-          <a href="shipping.html" class="active">Shipping</a>
-          <a href="consignment.html">Consignment</a>
-          <a href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="page-hero page-hero-shipping">
-        <div class="container page-hero-grid">
-          <div class="page-hero-copy">
-            <p class="section-tag light">Shipping Quote Request</p>
-            <h1>Need equipment shipped?</h1>
-            <p>Tell us where it needs to go, what the machine is, and anything important about loading or delivery. We use the details you send to start mapping out the best freight option.</p>
-          </div>
-          <aside class="page-hero-card">
-            <h3>Best info to include</h3>
-            <ul>
-              <li>Pickup and delivery city/state</li>
-              <li>Equipment type, weight, and dimensions if known</li>
-              <li>Whether it runs, rolls, or needs special loading</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section">
-      <div class="container form-page-grid">
+      <div class="hero">
         <div>
-                    <p class="page-lead">Fill this out with the best information you have and the request will be captured through your Netlify form setup. After deploy, configure form notifications to send submissions to <strong>sales@equipmentusaco.com</strong>.</p>
-          <div class="info-panel">
-            <h3>What to include</h3>
-            <ul>
-              <li>Pickup city/state and delivery city/state</li>
-              <li>Equipment type or item description</li>
-              <li>Approximate dimensions or weight if known</li>
-              <li>Any loading limitations or deadline notes</li>
-            </ul>
+          <div class="eyebrow">Equipment USA</div>
+          <h1>Website under construction.</h1>
+          <p>We’re tightening up the full Equipment USA website now. Until the finished version and live inventory links are in place, reach out directly for equipment questions, shipping quotes, or consignment opportunities.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:sales@equipmentusaco.com">Email Sales</a>
+            <a class="btn btn-secondary" href="tel:17173220990">Call 717-322-0990</a>
+          </div>
+          <div class="meta">
+            <div><span>What we do</span><strong>Buy. Sell. Move equipment nationwide.</strong></div>
+            <div><span>Need shipping?</span><strong>Send the equipment details, pickup and delivery info.</strong></div>
+            <div><span>Have equipment?</span><strong>Contact us to discuss consignment and marketing options.</strong></div>
           </div>
         </div>
-
-        <form class="form-card" name="shipping-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-          <input type="hidden" name="form-name" value="shipping-quote" />
-          <input type="hidden" name="subject" value="New Shipping Quote Request - Equipment USA" />
-          <p class="hidden-field">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-
-          <div class="form-row">
-            <label>
-              Full Name
-              <input type="text" name="name" required>
-            </label>
-            <label>
-              Company
-              <input type="text" name="company">
-            </label>
+        <aside class="panel">
+          <img class="logo" src="assets/equipmentusa-primary.png" alt="Equipment USA logo">
+          <div class="barricade" aria-hidden="true">
+            <div class="bar one"></div><div class="bar two"></div>
+            <div class="leg l1"></div><div class="leg l2"></div><div class="leg l3"></div><div class="leg l4"></div>
           </div>
-
-          <div class="form-row">
-            <label>
-              Email
-              <input type="email" name="email" required>
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone">
-            </label>
+          <h2>Temporary hold page. Real contact info.</h2>
+          <p>The site is being rebuilt the right way. Until then, the fastest way to reach us is directly.</p>
+          <div class="list">
+            <div class="item"><strong>Sales</strong>sales@equipmentusaco.com</div>
+            <div class="item"><strong>Phone</strong>717-322-0990</div>
+            <div class="item"><strong>Address</strong>1011 Rail Dr. Woodstock, IL 60098</div>
           </div>
-
-          <div class="form-row">
-            <label>
-              Pickup Location
-              <input type="text" name="pickup_location" placeholder="City, State or full address" required>
-            </label>
-            <label>
-              Delivery Location
-              <input type="text" name="delivery_location" placeholder="City, State or full address" required>
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label>
-              Equipment Type
-              <input type="text" name="equipment_type" placeholder="Excavator, skid steer, trailer, etc." required>
-            </label>
-            <label>
-              Running / Rollable?
-              <select name="running_condition">
-                <option value="">Select one</option>
-                <option>Yes</option>
-                <option>No</option>
-                <option>Partially</option>
-                <option>Not sure</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label>
-              Approx. Weight
-              <input type="text" name="weight" placeholder="Example: 18,000 lbs">
-            </label>
-            <label>
-              Approx. Dimensions
-              <input type="text" name="dimensions" placeholder="Example: 18L x 8W x 9H">
-            </label>
-          </div>
-
-          <label>
-            Notes
-            <textarea name="notes" rows="6" placeholder="Loading info, timing, machine details, auction lot number, or anything else helpful."></textarea>
-          </label>
-
-          <button class="btn btn-primary btn-full" type="submit">Send Shipping Request</button>
-        </form>
+        </aside>
       </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <img class="footer-logo" src="assets/equipmentusa-logo-main.png" alt="Equipment USA logo" />
-          <p>Nationwide equipment brokerage built for straightforward buyers and sellers.</p>
-        </div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="shipping.html">Shipping</a>
-          <a href="consignment.html">Consignment</a>
-          <a href="mailto:sales@equipmentusaco.com">Email</a>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p>© <span id="year"></span> Equipment USA All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
-
-  <script src="assets/script.js"></script>
+      <div class="foot">© 2026 Equipment USA. All rights reserved.</div>
+    </section>
+  </main>
 </body>
 </html>
